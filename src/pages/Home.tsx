@@ -210,15 +210,15 @@ const PartnersSection = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden bg-zinc-950">
+    <section className="py-16 md:py-24 relative overflow-hidden bg-zinc-950">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col md:flex-row items-end justify-between mb-12 md:mb-16 gap-6 md:gap-8">
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-4">
               <div className="h-px w-12 bg-cyan-primary" />
-              <span className="text-xs font-black uppercase tracking-[0.4em] text-cyan-primary">Strategic Alliances</span>
+              <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.4em] text-cyan-primary">Strategic Alliances</span>
             </div>
-            <h3 className="text-5xl md:text-7xl font-display font-black text-white uppercase tracking-tighter leading-none">
+            <h3 className="text-4xl sm:text-5xl md:text-7xl font-display font-black text-white uppercase tracking-tighter leading-none">
               The <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-primary to-blue-500">Ecosystem</span> Network
             </h3>
           </div>
@@ -328,7 +328,7 @@ const WhatSchoolsShouldTeach = () => {
       </div>
 
       <div className="container mx-auto px-6">
-        <div className="text-center mb-24">
+        <div className="text-center mb-16 md:mb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -339,17 +339,17 @@ const WhatSchoolsShouldTeach = () => {
               <span className="w-2 h-2 rounded-full bg-cyan-primary animate-pulse" />
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-primary">The Future Curriculum</span>
             </div>
-            <h3 className="text-6xl md:text-8xl font-display font-black text-white uppercase leading-[0.85] tracking-tighter">
+            <h3 className="text-5xl sm:text-6xl md:text-8xl font-display font-black text-white uppercase leading-[0.85] tracking-tighter">
               What Schools <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-primary to-blue-500">Should Teach</span>
             </h3>
-            <p className="text-zinc-500 text-xl max-w-2xl mx-auto font-medium">
+            <p className="text-zinc-500 text-lg md:text-xl max-w-2xl mx-auto font-medium">
               Moving beyond textbooks to build the foundational skills required for the next century of leadership and innovation.
             </p>
           </motion.div>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {pillars.map((pillar, i) => (
             <motion.div
               key={i}
@@ -360,7 +360,7 @@ const WhatSchoolsShouldTeach = () => {
               whileHover={{ y: -20 }}
               className="group relative"
             >
-              <div className="relative h-full p-12 rounded-[4rem] bg-zinc-900/40 border border-white/5 hover:border-cyan-primary/40 transition-all duration-700 flex flex-col overflow-hidden backdrop-blur-xl">
+              <div className="relative h-full p-8 md:p-12 rounded-[3rem] md:rounded-[4rem] bg-zinc-900/40 border border-white/5 hover:border-cyan-primary/40 transition-all duration-700 flex flex-col overflow-hidden backdrop-blur-xl">
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,255,255,0.1)_0%,transparent_70%)]" />
                 </div>
@@ -426,14 +426,14 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-32 bg-zinc-950 relative overflow-hidden">
+    <section id="faq" className="py-16 md:py-32 bg-zinc-950 relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
+        <div className="text-center mb-16 md:mb-20">
           <div className="inline-flex items-center gap-4 px-6 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
             <span className="w-2 h-2 rounded-full bg-cyan-primary animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-primary">Common Queries</span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-display font-black text-white uppercase tracking-tighter">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black text-white uppercase tracking-tighter">
             Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-primary to-blue-500">Questions</span>
           </h2>
         </div>
