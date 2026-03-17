@@ -29,26 +29,26 @@ export const AboutUs = () => {
   return (
     <div className="bg-zinc-950">
       {/* Motto / Hero Section */}
-      <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden pt-32">
+      <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden pt-24 md:pt-32">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         
         <div className="container mx-auto px-6 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="space-y-12"
+            className="space-y-8 md:space-y-12"
           >
             <div className="inline-flex items-center gap-4 px-6 py-2 rounded-full bg-white/5 border border-white/10">
               <span className="w-2 h-2 rounded-full bg-cyan-primary animate-pulse" />
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-primary">Our Motto</span>
             </div>
             
-            <h2 className="text-6xl md:text-[8rem] font-display font-black text-white uppercase tracking-tighter leading-[0.8] max-w-6xl mx-auto">
+            <h2 className="text-5xl sm:text-6xl md:text-[8rem] font-display font-black text-white uppercase tracking-tighter leading-[0.8] max-w-6xl mx-auto">
               Creating <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-primary to-blue-500">Future Leaders</span>, <br />
               Not Just Exam Scorers.
             </h2>
             
-            <p className="text-zinc-400 text-2xl leading-relaxed font-medium max-w-3xl mx-auto">
+            <p className="text-zinc-400 text-lg md:text-2xl leading-relaxed font-medium max-w-3xl mx-auto">
               We are a movement to modernize the Indian education system by integrating AI readiness, financial literacy, and real-world leadership into the core school curriculum.
             </p>
           </motion.div>
@@ -56,14 +56,14 @@ export const AboutUs = () => {
       </section>
 
       {/* Mission Section */}
-      <section id="about-us" className="py-32 relative overflow-hidden border-y border-white/5">
+      <section id="about-us" className="py-16 md:py-32 relative overflow-hidden border-y border-white/5">
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-12"
+              className="space-y-8 md:space-y-12"
             >
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-4 px-6 py-2 rounded-full bg-white/5 border border-white/10">
@@ -71,17 +71,17 @@ export const AboutUs = () => {
                   <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-primary">About Edunetic India</span>
                 </div>
                 
-                <h2 className="text-6xl md:text-8xl font-display font-black text-white uppercase tracking-tighter leading-[0.85]">
+                <h2 className="text-5xl sm:text-6xl md:text-8xl font-display font-black text-white uppercase tracking-tighter leading-[0.85]">
                   Redefining <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-primary to-blue-500">Education</span>
                 </h2>
               </div>
               
               <div className="space-y-6 max-w-xl">
-                <p className="text-zinc-400 text-2xl leading-relaxed font-medium">
+                <p className="text-zinc-400 text-lg md:text-2xl leading-relaxed font-medium">
                   We are more than a tech company. We are a movement to modernize the Indian education system from the ground up.
                 </p>
-                <p className="text-zinc-500 text-lg leading-relaxed">
+                <p className="text-zinc-500 text-base md:text-lg leading-relaxed">
                   By integrating AI readiness, financial literacy, and real-world leadership into the core school curriculum, we ensure that every student is prepared for the challenges of tomorrow, not just the exams of today.
                 </p>
               </div>
@@ -93,7 +93,7 @@ export const AboutUs = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/5] rounded-[5rem] overflow-hidden border border-white/10 glass relative z-10 group">
+              <div className="aspect-[4/5] rounded-[3rem] md:rounded-[5rem] overflow-hidden border border-white/10 glass relative z-10 group">
                 <img 
                   src="https://i.ibb.co/GQnTqfn0/Chat-GPT-Image-Feb-28-2026-06-34-46-PM.png" 
                   alt="About Edunetic" 
@@ -104,17 +104,17 @@ export const AboutUs = () => {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute -top-20 -right-20 w-80 h-80 bg-cyan-primary/10 rounded-full blur-[100px] animate-pulse" />
-              <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-600/10 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '2s' }} />
+              <div className="absolute -top-10 md:-top-20 -right-10 md:-right-20 w-40 md:w-80 h-40 md:h-80 bg-cyan-primary/10 rounded-full blur-[100px] animate-pulse" />
+              <div className="absolute -bottom-10 md:-bottom-20 -left-10 md:-left-20 w-40 md:w-80 h-40 md:h-80 bg-blue-600/10 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '2s' }} />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Founding Team Section */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-16 md:py-32 relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-24">
+          <div className="text-center mb-16 md:mb-24">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -125,13 +125,13 @@ export const AboutUs = () => {
                 <span className="w-2 h-2 rounded-full bg-cyan-primary animate-pulse" />
                 <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-primary">The Visionaries</span>
               </div>
-              <h2 className="text-6xl md:text-8xl font-display font-black text-white uppercase tracking-tighter leading-none">
+              <h2 className="text-5xl sm:text-6xl md:text-8xl font-display font-black text-white uppercase tracking-tighter leading-none">
                 Founding <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-primary to-blue-500">Team</span>
               </h2>
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {team.map((member, i) => (
               <motion.div
                 key={i}
@@ -141,7 +141,7 @@ export const AboutUs = () => {
                 transition={{ delay: i * 0.1, duration: 0.8 }}
                 className="group relative"
               >
-                <div className="relative aspect-[3/4] rounded-[3rem] overflow-hidden mb-8 border border-white/10 group-hover:border-cyan-primary/40 group-hover:shadow-[0_0_50px_rgba(0,255,255,0.15)] transition-all duration-700 shadow-2xl">
+                <div className="relative aspect-[3/4] rounded-[2.5rem] md:rounded-[3rem] overflow-hidden mb-6 md:mb-8 border border-white/10 group-hover:border-cyan-primary/40 group-hover:shadow-[0_0_50px_rgba(0,255,255,0.15)] transition-all duration-700 shadow-2xl">
                   <img 
                     src={member.image} 
                     alt={member.name} 
